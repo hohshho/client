@@ -87,7 +87,7 @@ export default function Main() {
 
         try {
             const response = await fetch(
-                "http://localhost:3000/api/getJsonReadDb",
+                "http://192.168.50.105:3000/api/getJsonReadDb",
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -163,7 +163,7 @@ export default function Main() {
             
             // fetch API를 사용하여 삭제 요청 보내기
             const response = await fetch(
-                "http://localhost:3000/api/deletePOI",
+                "http://192.168.50.105:3000/api/deletePOI",
                 {
                     method: "POST",
                     headers: {
@@ -209,7 +209,7 @@ export default function Main() {
         map.clearInputPoint();
 
         try {
-            const response = await fetch("http://localhost:3000/api/addPOI", {
+            const response = await fetch("http://192.168.50.105:3000/api/addPOI", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
